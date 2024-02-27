@@ -2,7 +2,7 @@ meat = True
 cheese = True
 lettuce = 3
 
-
+# Code begins here
 
 if meat == False:
     print("The meat is not in the burger. Please add meat.")
