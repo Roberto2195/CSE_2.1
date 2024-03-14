@@ -4,11 +4,7 @@ number_of_packets = ""
 selected_a_sandwhich = True
 selected_a_beverage = True
 selected_fries = True
-order = ["", "", "", 0]
-sandwhich_index = 0
-beverage_index = 1
-fries_index = 2
-ketchup_index = float(input(number_of_packets))
+order = []
 
 # Explaining Menu Options
 print("What type of sandwich would you like?")
@@ -73,5 +69,61 @@ if bev_choice == "yes":
 if fry_choice == "yes":
     print(fry_size)
 
-print(subtotal)
+food = input("Do you want a second sandwhich? chicken $5.25, beef $6.25, tofu $5.75, or no food?")
+if food == "chicken":
+    print("You chose chicken for $5.25")
+    order.append("chicken")
+    subtotal += 5.25
+elif (food == "beef"):
+    print("You chose beef for $6.25")
+    order.append("beef")
+    subtotal += 6.25
+elif (food == "tofu"):
+    print("You chose tofu for $5.75")
+    order.append("tofu")
+    subtotal += 5.75
+else:
+    print("You did not buy any food")
+    order.append("no sandwhich")
+    selected_a_sandwhich = False
 
+fry_choice = input("Do you want french fries? Yes or No")
+if fry_choice == "yes":
+    fry_size = input("What size fries would you like? Small, Medium, or Large")
+    if fry_size == "small":
+        supersize = input("Do you want to supersize that for $2? Yes or no")
+        if supersize == "yes":
+            fry_size = "large"
+            subtotal += 2
+        else:
+            print("You chose small fries for $1")
+            subtotal += 1
+    elif fry_size == "medium":
+        print("You chose medium for $1.50")
+        subtotal += 1.50
+    elif fry_size == "large":
+        print("You chose large fries for $2")
+        subtotal += 2
+    else:
+        print("You did not order any fries")
+        order.append("No fries")
+        selected_french_fries = False
+
+bev_choice = input("Do you want a beverage? yes or no")
+if bev_choice == "yes":
+    bev_size = input("What size beverage would you like? Small, Medium, or Large")
+    if bev_size == "small":
+        print("You chose small, so $1.00")
+        subtotal += 1
+    elif bev_size == "medium":
+        print("You chose medium, so $1.75")
+        subtotal += 1.75
+    elif bev_size == "large":
+        print("You chose large, so $2.25")
+        subtotal += 2.25
+    else:
+        print("You did not order any drink")
+        order.append("No drink selected")
+        selected_french_fries = False
+
+print(subtotal)
