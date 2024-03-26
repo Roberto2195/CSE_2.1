@@ -14,3 +14,17 @@ class Dog:
         return "fur: " + str(self.fur) + "legs: " + str(self.legs) + "fur_color: " + str(self.fur_color)
 
 
+    def get_fur(self):
+        return self.fur
+    def get_legs(self):
+        return self.legs
+    def get_fur_color(self):
+        return self.fur_color
+
+
+    def set_fur(self, new_fur):
+        self.fur = new_fur
+    def set_legs(self, new_legs):
+        self.legs = new_legs
+    def set_fur_color(self, new_fur_color):
+        self.fur_color = new_fur_color
