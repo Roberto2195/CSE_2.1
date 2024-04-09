@@ -1,6 +1,4 @@
 from course import Course
-
-
 class Student:
     student_id = 0
 
@@ -18,6 +16,14 @@ class Student:
         #  add a loop that will go through the course list
         #  Add code here to create a string representation of a student,
         # including first and last name and all courses that student is taking
+        info = self.last_name + ", " + self.first_name
+
+        for course in self.courses:
+            print(course)
+
+
+
+        # reminder: += is a concatenation
         return "complete this return statement based on your in loop variable"
 
     def get_first_name(self):
