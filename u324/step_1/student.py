@@ -11,20 +11,17 @@ class Student:
 
     def __str__(self):
         # Calling "print(student)"" from main.py will call this method instead
-        # You will need to use a variable in the loop, so you must intialize it here,
-        # that variable will need to be initalized to get items listed in the first def _init_ section
-        #  add a loop that will go through the course list
-        #  Add code here to create a string representation of a student,
+        # You will need to use a variable in the loop, so you must initialize it here,
+        # that variable will need to be initialized to get items listed in the first def _init_ section
+        # add a loop that will go through the course list
+        # Add code here to create a string representation of a student,
         # including first and last name and all courses that student is taking
         info = self.last_name + ", " + self.first_name
 
         for course in self.courses:
-            print(course)
+            info += ", " + str(course)
 
-
-
-        # reminder: += is a concatenation
-        return "complete this return statement based on your in loop variable"
+        return info
 
     def get_first_name(self):
         return self.first_name
@@ -36,5 +33,4 @@ class Student:
         return self.student_id
 
     def add_course(self, new_course):
-        #  add code to append new_course to self.courses
-        print("Complete this based on what the program is doing here.")
+        return self.courses.append(new_course)
