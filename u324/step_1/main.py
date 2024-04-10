@@ -8,7 +8,7 @@ history = Course("U.S. History I")
 phys_ed = Course("Physical Education I")
 
 comp_graphics = Course("Computer Graphics I")
-ap_lit_and_comp = Course("AP Literature & Composition")
+english = Course("English I")
 
 test_student = Student("Jill", "Sample")
 test_student.add_course(math)
@@ -28,7 +28,7 @@ test_student3.add_course(phys_ed)
 test_student3.add_course(science)
 test_student3.add_course(history)
 test_student3.add_course(comp_graphics)
-test_student3.add_course(ap_lit_and_comp)
+test_student3.add_course(english)
 
 roster = []
 roster.append(test_student)
