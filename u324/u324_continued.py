@@ -7,7 +7,6 @@ def assignment_2():
 # this is a call of that function
 assignment_1()
 assignment_2_result = assignment_2()
-
 # this function takes two arguments and returns their sum
 def add(operand1, operand2):
     return operand1 + operand2

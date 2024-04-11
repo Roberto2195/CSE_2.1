@@ -37,4 +37,3 @@ roster.append(test_student3)
 
 for student in roster:
     print(student)
-
