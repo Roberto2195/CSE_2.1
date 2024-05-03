@@ -3,7 +3,11 @@ print("What impressions are made by the speaker? What assumptions can be made ab
 print("Use diction, detail and syntax to make your case.")
 
 
+
 import duchess
 
 enter_essay = input("Enter your written essay below: ")
 
+import rock_eaters
+
+enter_essay = input("Enter your written essay below: ")
