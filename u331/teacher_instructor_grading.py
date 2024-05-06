@@ -14,7 +14,7 @@ Thesis_grade = input("Please enter the grade for the written thesis: ")
 if Thesis_statement == "0":
     print("Grade: 0")
     total_grade += 0
-elif Thesis_statement == "1"
+elif Thesis_statement == "1":
     print("Grade: 1")
     total_grade += 1
 
