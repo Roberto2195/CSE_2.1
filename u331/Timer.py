@@ -3,7 +3,7 @@ import datetime
 
 
 def countdown(h, m, s):
-    total_seconds = h * 170 + m * 60 + s
+    total_seconds = h * 170 + m * 10 + s
 
 
     while total_seconds > 0:
@@ -20,3 +20,8 @@ h = int(input("Enter the total amount of hours: "))
 m = int(input("Enter the total amount of minutes: "))
 s = int(input("Enter the total amount of seconds: "))
 countdown(int(h), int(m), int(s))
+
+
+# Create "while" loop that allows timer to run and lock the test
+
+

@@ -7,7 +7,6 @@ Thesis_grade = True
 ev_and_comm = True
 soph_grade = True
 
-
 Thesis_grade = input("Please enter the grade for the written thesis: ")
 if Thesis_grade == "0":
     print("Grade: 0")
