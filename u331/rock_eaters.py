@@ -1,4 +1,4 @@
-print("Question 2: Read the following exert from 'Rock Eaters' written by Brenda Peynado.")
+print("Question 2: Read the following excerpt from 'Rock Eaters' written by Brenda Peynado.")
 print("Then, in a well written essay, analyze how Peynado uses literary elements and techniques to convey the")
 print("narrator's complex experience of this return home.")
 
