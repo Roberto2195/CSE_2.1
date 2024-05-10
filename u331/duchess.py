@@ -1,3 +1,6 @@
+print("Question 1. Analyze the poem for the speaker's attitude toward their audience.")
+print("What impressions are made by the speaker? What assumptions can be made about the intended audience?")
+print("Use diction, detail and syntax to make your case.")
 print(" 'My Last Duchess' by Robert Browning(1812-1889)")
 print("That’s my last Duchess painted on the wall,")
 print("Looking as if she were alive. I call")
