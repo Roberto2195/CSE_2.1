@@ -1,4 +1,3 @@
-# Insert AP Lit & Comp rubric w/ teacher/instructor input available
 print("Please grade your students test submissions below.")
 
 print("Below is the criteria for a written thesis statement. Please grade accordingly.")
@@ -43,3 +42,5 @@ else:
 
 
 print(essay_score)
+
+input("Please provide any criticisms:   ")
